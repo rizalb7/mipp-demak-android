@@ -13,7 +13,7 @@ export const style = StyleSheet.create({
     justifyContent:"center"
   },
   viewCard:{
-    backgroundColor:"white",
+    backgroundColor:"rgba(255,255,255,0.85)",
     borderRadius:8,
     shadowRadius:4,
     width:100,
@@ -37,5 +37,35 @@ export const style = StyleSheet.create({
     lineHeight:13,
     marginTop:6,
     marginHorizontal:8,
+  },
+  cariView: {
+    flexDirection: 'row', 
+    justifyContent: 'center', 
+    marginVertical:10
+  },
+  cariInput: {
+    borderWidth: 1.5, 
+    borderColor: 'dodgerblue', 
+    color: 'black', 
+    backgroundColor: 'white', 
+    height:45, 
+    width:300, 
+    marginRight:5, 
+    padding: 10, 
+    borderTopLeftRadius: 7, 
+    borderBottomLeftRadius: 7
+  },
+  cariBtn: {
+    backgroundColor: "dodgerblue", 
+    justifyContent: "center", 
+    padding: 10, 
+    borderTopRightRadius: 7, 
+    borderBottomRightRadius: 7
+  },
+  cariBtnText: {
+    color: 'white', 
+    fontSize: 16, 
+    fontWeight: "bold", 
+    marginHorizontal: 2
   }
 });
