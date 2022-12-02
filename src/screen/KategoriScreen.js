@@ -1,5 +1,5 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import { Alert, Pressable } from "react-native";
+import { Alert, Pressable, Text, View } from "react-native";
 import { DataOpd, DataPemerintah, DataPublik, ShowWebsite } from "../components";
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -31,7 +31,15 @@ export const KategoriScreen = ({props}) => {
         name="ShowWebsite"
         component={ShowWebsite}
         options={({route}) => ({
-          title: route.params.judul,
+          title: (
+            <View style = {{width: 250, height: 50}}>
+                <Text 
+                    numberOfLines = {2} 
+                    style = {{color: 'black', fontWeight: '700', fontSize: 16, textAlign: 'center', marginTop: 4}}>
+                    {route.params.judul}
+                </Text>
+            </View>
+          ),
           headerTitleAlign: 'center',
         })}
       />
